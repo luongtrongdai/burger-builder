@@ -5,5 +5,6 @@ export {
 } from './burgerBulder';
 
 export {
-    getListOrders
+    getListOrders,
+    purchaseBurger
 } from './order';
