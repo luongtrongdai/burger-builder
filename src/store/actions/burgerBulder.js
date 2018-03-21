@@ -5,28 +5,28 @@ export const addIngredient = (type) => {
     return {
         type: actionTypes.ADD_INGREDIENTS,
         ingredientName: type
-    }
-}
+    };
+};
 
 export const removeIngredient = (type) => {
     return {
         type: actionTypes.REMOVE_INGREDIENTS,
         ingredientName: type
-    }
-}
+    };
+};
 
 export const setIngredients = (ingredients) => {
     return {
         type: actionTypes.SET_INGREDIENTS,
         ingredients: ingredients
-    }
-}
+    };
+};
 
 export const fetchIngredientFailed = () => {
     return {
         type: actionTypes.FETCH_INGREDIENTS_FAILED
-    }
-}
+    };
+};
 
 export const initIngredients = () => {
     return dispatch => {
@@ -36,5 +36,5 @@ export const initIngredients = () => {
             }).catch(error => {
                 dispatch(fetchIngredientFailed());
             });
-    }
-}
+    };
+};
